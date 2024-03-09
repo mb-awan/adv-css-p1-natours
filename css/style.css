@@ -122,6 +122,10 @@ body {
   opacity: 0;
 }
 
+.btn-animated-bottom-top {
+  animation: moveInTop 1s ease-out; /* shorthand */
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -144,6 +148,18 @@ body {
   80% {
     transform: translateX(-10px);
   }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
   100% {
     opacity: 1;
     transform: translate(0);
